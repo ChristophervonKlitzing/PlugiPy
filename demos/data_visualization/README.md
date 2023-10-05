@@ -1,0 +1,3 @@
+- Core Application: A data visualization tool.
+- Plugins: Chart types, data connectors (e.g., database connectors, API integrations), and export plugins.
+- Workflow: Users can select and apply plugins to create different types of charts, connect to various data sources, and export visualizations in different formats.

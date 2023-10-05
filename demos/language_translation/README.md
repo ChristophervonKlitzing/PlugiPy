@@ -1,0 +1,3 @@
+- Core Application: Manages a stream of spoken or written text in one language.
+- Plugins: Translation plugins for various target languages.
+- Workflow: The core application continuously receives input text, passes it to the active translation plugin, and provides real-time translation results. Useful for multilingual communication.
