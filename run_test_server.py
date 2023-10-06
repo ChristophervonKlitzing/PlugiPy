@@ -1,4 +1,4 @@
-from multiuse_plugin.python_service.python_service import RPCService
+from plugipy.python_service.python_service import RPCService
 
 def main():
     from rpyc.utils.server import ThreadedServer

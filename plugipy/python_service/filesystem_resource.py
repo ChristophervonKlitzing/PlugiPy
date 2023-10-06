@@ -13,7 +13,7 @@ class FilesystemResource:
             self._local_path = self._path
         else:
             # copy over path content from system self._id to this system
-            from multiuse_plugin.python_service.python_service import RPCService
+            from .python_service import RPCService
             path: str = RPCService.get_dir_or_file(self._id, self._path)
             self._local_path = path
         

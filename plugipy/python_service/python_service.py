@@ -3,21 +3,19 @@ from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 from dataclasses import dataclass
 import io
 import uuid
-from multiuse_plugin.python_service.future import Future, FutureWrapper, ResultFuture, RemoteFuture
+from plugipy.python_service.future import Future, FutureWrapper, ResultFuture, RemoteFuture
 import concurrent.futures as cf
 import importlib
 import os
-from typing import Callable, Dict, List, Any, Optional, Protocol, Tuple, Type, Set
+from typing import Callable, Dict, Any, Optional, Protocol, Tuple, Type
 import queue
 import threading
-from multiuse_plugin.plugin_info.plugin_info import PluginInfo
+from ..plugin_info.plugin_info import PluginInfo
 import rpyc
 import pickle
 
-from multiuse_plugin.python_service.filesystem_resource import FilesystemResource
-import time
-
-from multiuse_plugin.util.directory_encoder import decode_directory, encode_directory
+from .filesystem_resource import FilesystemResource
+from ..util.directory_encoder import decode_directory, encode_directory
 # from multiuse_plugin.util.python_module_loader import dynamically_load_as_new_python_module
 
 

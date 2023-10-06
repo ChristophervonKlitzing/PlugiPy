@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import threading
-from typing import Any, Optional, Callable, Tuple
+from typing import Any, Optional, Callable
 import concurrent.futures as cf
 
 
