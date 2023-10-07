@@ -1,0 +1,1 @@
+This is a file purely for testing the filter to check if a plugin contains a certain file.

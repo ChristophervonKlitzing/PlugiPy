@@ -1,18 +1,18 @@
 from abc import ABC, abstractmethod
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 from dataclasses import dataclass
-import io
 import uuid
-from plugipy.python_service.future import Future, FutureWrapper, ResultFuture, RemoteFuture
 import concurrent.futures as cf
 import importlib
 import os
 from typing import Callable, Dict, Any, Optional, Protocol, Tuple, Type
-import queue
 import threading
-from ..plugin_info.plugin_info import PluginInfo
-import rpyc
 import pickle
+import rpyc
+
+from .future import Future, FutureWrapper, ResultFuture, RemoteFuture
+from ..plugin_info.plugin_info import PluginInfo
+
 
 from .filesystem_resource import FilesystemResource
 from ..util.directory_encoder import decode_directory, encode_directory
@@ -20,8 +20,7 @@ from ..util.directory_encoder import decode_directory, encode_directory
 
 
 class PythonService(ABC):
-    def __init__(self, *args, **kw_args) -> None:
-        ...
+    ...
 
 
 class ServiceDescription:
